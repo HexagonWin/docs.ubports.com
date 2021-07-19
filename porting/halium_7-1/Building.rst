@@ -86,6 +86,13 @@ You are now ready to build the two image files to incorporate the changes you ha
 4. ``mka halium-boot``
 5. ``mka systemimage``
 
+.. Note::
+    In some cases you may get errors containing the word flex or Lex. If this happens, run the followings and try again::
+    
+        export LC_ALL=C
+        export USE_HOST_LEX=yes
+ 
+
 Troubleshooting the build process
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
